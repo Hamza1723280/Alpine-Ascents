@@ -278,3 +278,7 @@ padding-left: 5px;
     cursor: pointer;
 
 }
+
+.banner_mountainerrig ,.banner_mountainering_2{
+    display: flex;
+}

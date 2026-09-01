@@ -1,7 +1,15 @@
-let icon = document.getElementById("hamburger")
-let sidebar = document.querySelector(".sidebar")
+let close_btn = document.querySelector("#close");
+let side = document.querySelector(".sidebar");
+let menu = document.getElementById("hamburger");
 
-icon.addEventListener.("click",() =>
-    sidebar.style.width="30%"
-)
+side.style.transition ="0.5s"
 
+menu.addEventListener("click", function () {
+
+    side.style.width="70%";
+
+})
+
+close_btn.addEventListener("click", function () {
+    side.style.width = "0%";
+});

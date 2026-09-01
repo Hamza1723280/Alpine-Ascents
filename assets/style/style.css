@@ -20,7 +20,9 @@ header>.logo {
     justify-content: center;
 }
 
-
+#hamburger{
+    display: none;
+}
 header>.logo>a>img {
     width: 300px;
     display: block;
@@ -282,84 +284,128 @@ footer {
 
 }
 
-.banner_mountainerrig,
-.banner_mountainering_2 {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px 40px 50px;
+.banner_mountaineering {
+    background-image: url("../Mountaineering image/banner 1.webp");
 }
 
-.mountain_banner {
-    background-image: url("../Mountaineering Image/banner.webp");
+.mountaineering_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
-.mountain_page {
-    padding-bottom: 20px;
+.mountaineering_container > div {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.mountain_title {
-    font-size: 42px;
-    font-weight: bold;
-    text-align: center;
-    padding: 30px 15px 10px;
-    margin: 0;
+.mountaineering_container > div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
-.mountain_text {
-    width: 55%;
-}
-
-.mountain_text h2 {
+.mountaineering_container h4 {
     color: red;
-    margin: 28px 0 10px;
-    font-size: 26px;
-}
-
-.mountain_text h1 {
-    margin: 0 0 12px;
-    font-size: 32px;
-}
-
-.mountain_text p {
-    font-size: 17px;
-    line-height: 1.7;
-    color: #333;
-    margin: 0 0 14px;
-}
-
-.mountain_photos {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.mountain_photos img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    display: block;
-}
-
-.mountain_list {
-    margin: 0 0 18px;
-    padding-left: 22px;
-}
-
-.mountain_list li {
-    font-size: 17px;
-    line-height: 1.8;
-    color: #333;
-}
-
-.mountain_route {
-    background-color: #f2f2f2;
-    padding: 14px 18px;
-    font-weight: bold;
+    margin: 0;
     text-align: center;
 }
 
+.mountaineering_container h1 {
+    margin: 5px 0 20px;
+    text-align: center;
+}
+
+.mountaineering_container h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.mountaineering_container p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.mountaineering_styles > p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+.mtn_row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.mtn_row.reverse {
+    flex-direction: row-reverse;
+}
+
+.mtn_text,
+.mtn_img {
+    width: 50%;
+}
+
+.mtn_img img,
+.mtn_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.mtn_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.mtn_card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.mountaineering_container ul {
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.mountaineering_container li {
+    background-color: #f2f2f2;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+.mtn_card li {
+    background-color: #fff;
+}
+
+.mtn_note {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.records_grid .mtn_card {
+    flex: 1 1 45%;
+}
+
+.records_grid .mtn_card p {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
 .sidebar {
     width: 260px;
     height: 100vh;

@@ -1,0 +1,687 @@
+/* ---------- TABLET ---------- */
+@media (max-width: 991px) {
+
+    #hamburger {
+        display: block;
+    }
+
+    /* HEADER */
+    header {
+        width: 100%;
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    header>.logo {
+        width: auto;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    header>.logo>a>img {
+        width: 180px;
+    }
+
+    /* DESKTOP NAV HIDE */
+    .nav_menu {
+        display: none;
+    }
+
+    /* HAMBURGER SHOW */
+    .menu {
+        display: block;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.20);
+        z-index: 9999;
+    }
+
+    .sidebar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .sidebar ul li {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .sidebar ul li:last-child {
+        border-bottom: none;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        padding: 15px 5px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .sidebar ul li a:hover {
+        color: red;
+    }
+
+    /* ========================= BANNER ========================= */
+    .banner {
+        width: 100%;
+        height: 450px;
+        padding-top: 150px;
+    }
+
+    .banner h2 {
+        font-size: 35px;
+    }
+
+    .banner h1 {
+        font-size: 55px;
+    }
+
+    /* ========================= BOXES ========================= */
+    .boxes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 35px 30px;
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    /* ========================= ABOUT ========================= */
+    .about {
+        width: 100%;
+        display: flex;
+        padding: 35px 30px;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .about_text {
+        width: 50%;
+        padding: 0;
+    }
+
+    .about_img {
+        width: 50%;
+    }
+
+    .about_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ========================= ACTIVITIES ========================= */
+    .activities {
+        padding: 35px 30px;
+    }
+
+    .act_row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .act_box {
+        width: 100%;
+    }
+
+    .act_box:last-child {
+        width: 100%;
+    }
+
+    /* ========================= NUMBERS ========================= */
+    .numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .num_box {
+        width: 100%;
+    }
+
+    /* ========================= FOOTER ========================= */
+    footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 30px;
+        gap: 35px;
+    }
+
+    footer>.footer_logo {
+        width: 100%;
+    }
+
+    .useful-links {
+        width: 100%;
+    }
+
+    .address {
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+
+    footer>.footer_logo>a>img {
+        width: 230px;
+    }
+
+    .p_footer {
+        padding-bottom: 30px;
+    }
+}
+
+/* ========================= MOBILE 767px and below ========================= */
+@media (max-width: 767px) {
+
+    /* HEADER */
+    header {
+        padding: 12px 20px;
+    }
+
+    header>.logo>a>img {
+        width: 145px;
+    }
+
+    .menu {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 400px;
+        padding: 120px 20px 0;
+    }
+
+    .banner h2 {
+        font-size: 27px;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    /* BOXES */
+    .boxes {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    /* ABOUT */
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .about_text {
+        width: 100%;
+    }
+
+    .about_img {
+        width: 100%;
+    }
+
+    /* ACTIVITIES */
+    .activities {
+        padding: 30px 20px;
+    }
+
+    .act_row {
+        grid-template-columns: 1fr;
+    }
+
+    .act_box {
+        width: 100%;
+    }
+
+    /* NUMBERS */
+    .numbers {
+        grid-template-columns: 1fr 1fr;
+        padding: 35px 15px;
+        gap: 25px 10px;
+    }
+
+    .num_box {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 25px;
+        gap: 35px;
+    }
+
+    footer>.footer_logo,
+    .useful-links,
+    .address {
+        width: 100%;
+    }
+
+    .address {
+        grid-column: auto;
+    }
+}
+
+/* ========================= SMALL MOBILE 480px and below ========================= */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    header>.logo>a>img {
+        width: 120px;
+    }
+
+    .menu {
+        width: 27px;
+        height: 27px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 350px;
+        padding-top: 105px;
+    }
+
+    .banner h2 {
+        font-size: 22px;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    /* BOXES */
+    .boxes {
+        padding: 20px 15px;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 25px 15px;
+    }
+
+    /* ACTIVITIES */
+    .activities {
+        padding: 25px 15px;
+    }
+
+    /* NUMBERS */
+    .numbers {
+        padding: 30px 10px;
+    }
+
+    .num_box h2 {
+        font-size: 30px;
+    }
+
+    .num_box p {
+        font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 35px 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    header {
+        width: 100%;
+        padding: 15px 25px;
+        justify-content: space-between;
+    }
+
+    header>.logo {
+        width: 25%;
+        justify-content: flex-start;
+    }
+
+    header>.logo>a>img {
+        width: 190px;
+    }
+
+    .nav_menu {
+        width: 70%;
+    }
+
+    .nav_menu>ul {
+        gap: 20px;
+        justify-content: flex-end;
+        font-size: 14px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* ===================================== MOBILE ===================================== */
+@media (max-width: 767px) {
+
+
+    #hamburger {
+        display: block;
+    }
+
+    /* HEADER */
+    header {
+        width: 100%;
+        padding: 12px 20px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    header>.logo {
+        width: auto;
+    }
+
+    header>.logo>a>img {
+        width: 150px;
+    }
+
+    /* DESKTOP MENU HIDE */
+    .nav_menu {
+        display: none;
+    }
+
+    /* HAMBURGER SHOW */
+    .menu {
+        display: block;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 280px;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        display: none;
+    }
+
+    .sidebar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .sidebar ul li {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        padding: 14px 5px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .sidebar ul li a:hover {
+        color: red;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 400px;
+        padding: 130px 20px 0;
+    }
+
+    .banner h2 {
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    /* BOXES */
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+        gap: 15px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* ABOUT */
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+
+    .about_text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about_img {
+        width: 100%;
+    }
+
+    .about_img img {
+        width: 100%;
+    }
+
+    /* ACTIVITIES */
+    .activities {
+        padding: 30px 20px;
+    }
+
+    .act_row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .act_box {
+        width: 100% !important;
+    }
+
+    .act_box:last-child {
+        grid-column: auto;
+        margin: 0;
+    }
+
+    .act_box img {
+        height: 220px;
+    }
+
+    /* NUMBERS */
+    .numbers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 15px;
+        gap: 25px 10px;
+    }
+
+    .num_box {
+        width: 100%;
+    }
+
+    .num_box h2 {
+        font-size: 35px;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding: 40px 25px;
+    }
+
+    footer>.footer_logo,
+    .useful-links,
+    .address {
+        width: 100%;
+    }
+
+    footer>.footer_logo>a>img {
+        width: 220px;
+    }
+
+    .p_logo_footer {
+        font-size: 15px;
+        margin-left: 0;
+    }
+
+    .links_footer {
+        padding-bottom: 25px;
+    }
+
+    .p_footer {
+        padding-bottom: 30px;
+    }
+}
+
+/* ===================================== SMALL MOBILE ===================================== */
+@media (max-width: 480px) {
+
+    /* HEADER */
+    header {
+        padding: 10px 15px;
+    }
+
+    header>.logo>a>img {
+        width: 125px;
+    }
+
+    .menu {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 350px;
+        padding-top: 110px;
+    }
+
+    .banner h2 {
+        font-size: 22px;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    /* BOXES */
+    .boxes {
+        padding: 20px 15px;
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 20px 15px;
+    }
+
+    .about_text h2 {
+        font-size: 28px;
+    }
+
+    .about_text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* ACTIVITIES */
+    .activities {
+        padding: 25px 15px;
+    }
+
+    .activities h2 {
+        font-size: 28px;
+    }
+
+    .act_box {
+        padding: 12px;
+    }
+
+    .act_box img {
+        height: 200px;
+    }
+
+    .act_box p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* NUMBERS */
+    .numbers {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 10px;
+    }
+
+    .num_box h2 {
+        font-size: 30px;
+    }
+
+    .num_box p {
+        font-size: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 35px 20px;
+    }
+
+    footer>.footer_logo>a>img {
+        width: 190px;
+    }
+
+    .p_logo_footer {
+        font-size: 14px;
+    }
+}

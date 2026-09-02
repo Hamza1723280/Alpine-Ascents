@@ -512,3 +512,53 @@ footer {
     text-align: center;
     font-size: 18px;
 }
+
+/* courses */
+
+
+.banner_courses {
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80");
+}
+
+.course_block h2 {
+    font-size: 28px;
+    margin: 0 0 16px;
+}
+
+.course_price {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.course_block .mtn_img img {
+    height: 280px;
+}
+
+
+/* Guide  */
+.banner_guide {
+    background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=1920&q=80");
+}
+
+.banner_about {
+    background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80");
+}
+
+.guide_card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f2f2f2;
+    padding: 18px;
+}
+
+.guide_card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.guide_number {
+    color: red;
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}

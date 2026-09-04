@@ -561,3 +561,93 @@ footer {
     margin: 0;
     font-weight: bold;
 }
+
+/* Expeditions page */
+
+
+.banner_expedition {
+    background-image: url("../banner images/1.webp") !important;
+    padding-top: 140px !important;
+}
+
+
+
+.expedition_banner_text {
+    color: white;
+    max-width: 720px;
+    margin: 16px auto 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+.expedition_meta {
+    color: red;
+    font-size: 14px;
+    margin: 6px 0 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.act_box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+.include_num {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Teko, sans-serif;
+    margin-bottom: 5px;
+}
+
+
+.expedition_timeline {
+    max-width: 680px;
+    margin: 30px auto 0;
+    padding-left: 30px;
+    border-left: 3px solid red;
+    text-align: left;
+}
+
+.timeline_item {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+
+.timeline_item::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    position: absolute;
+    left: -37px;
+    top: 20px;
+}
+
+.timeline_item h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-family: Teko, sans-serif;
+    text-transform: uppercase;
+}
+
+.timeline_item h3 span {
+    color: red;
+}
+
+
+.expedition_cta {
+    display: block !important;
+    text-align: center !important;
+    padding-top: 130px !important;
+    height: 400px !important;
+}

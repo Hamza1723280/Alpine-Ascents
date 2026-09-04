@@ -646,8 +646,14 @@ footer {
 
 
 .expedition_cta {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center !important;
-    padding-top: 130px !important;
-    height: 400px !important;
+    padding: 60px 20px !important;
+    min-height: 400px;
+    height: auto !important;
+    box-sizing: border-box;
 }
+

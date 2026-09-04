@@ -1242,91 +1242,80 @@
     .gallery_item h3 {
         font-size: 16px;
     }
-}
-/* ==========================================================================
-   MOBILE & TABLET RESPONSIVENESS FOR EXPEDITIONS PAGE COMPONENTS
-   ========================================================================== */
 
-/* Tablet Optimization (1024px and below) */
-@media (max-width: 1024px) {
-    .banner_expedition {
-        height: 450px !important;
-        padding-top: 160px !important;
+/* Expedition page */
+
+@media (max-width: 1200px) {
+    .expedition_cta {
+        min-height: 360px;
+        padding: 50px 20px !important;
     }
-    
-    .expedition_banner_text {
-        font-size: 15px;
-        max-width: 600px;
+
+    .expedition_cta h2 {
+        font-size: 40px !important;
+    }
+
+    .expedition_cta p {
+        font-size: 18px !important;
     }
 }
 
-/* Mobile Layout Fixes (768px and below) */
 @media (max-width: 768px) {
-    /* Forces the 3 featured expedition cards to stack vertically */
-    .activities .act_row {
-        display: grid;
-        grid-template-columns: 1fr !important;
-        gap: 25px;
+    .expedition_cta {
+        min-height: 330px;
+        padding: 45px 20px !important;
     }
 
-    /* Sets cards and visual info blocks to full workspace width */
-    .act_box, .box {
-        width: 100% !important;
-        margin-bottom: 10px;
-    }
-
-    .act_box img {
-        height: 250px !important;
-    }
-
-    /* Scales down large section typography dynamically */
-    .banner_expedition h1 {
-        font-size: 45px !important;
+    .expedition_cta h2 {
+        font-size: 34px !important;
         line-height: 1.1;
     }
 
-    /* Centers timeline alignment on compact phone views */
-    .expedition_timeline {
-        max-width: 100%;
-        margin: 25px 10px 0;
-        padding-left: 20px;
+    .expedition_cta p {
+        font-size: 17px !important;
+        margin: 10px 0 18px !important;
     }
 
-    .timeline_item::before {
-        left: -27px; /* Realings line node markers closer to border boundary */
-    }
-
-    .expedition_cta {
-        height: 380px !important;
-        padding-top: 110px !important;
+    .expedition_cta .about_btn {
+        padding: 10px 24px !important;
+        font-size: 15px;
     }
 }
 
-/* Small Screens Optimization (480px and below) */
 @media (max-width: 480px) {
-    .banner_expedition {
-        height: 340px !important;
-        padding-top: 100px !important;
+    .expedition_cta {
+        min-height: 300px;
+        padding: 40px 15px !important;
     }
 
-    .banner_expedition h1 {
-        font-size: 32px !important;
+    .expedition_cta h2 {
+        font-size: 28px !important;
+        line-height: 1.15;
     }
 
-    .banner_expedition h2 {
-        font-size: 22px !important;
+    .expedition_cta p {
+        font-size: 15px !important;
+        line-height: 1.5;
+        margin: 8px 0 18px !important;
     }
 
-    .expedition_banner_text {
-        font-size: 13px;
-        line-height: 1.6;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden; /* Trims long descriptions gracefully on tiny devices */
-    }
-    
-    .act_box img {
-        height: 200px !important;
+    .expedition_cta .about_btn {
+        padding: 10px 20px !important;
+        font-size: 14px;
     }
 }
+
+@media (max-width: 360px) {
+    .expedition_cta h2 {
+        font-size: 24px !important;
+    }
+
+    .expedition_cta p {
+        font-size: 14px !important;
+    }
+
+    .expedition_cta .about_btn {
+        padding: 9px 18px !important;
+        font-size: 13px;
+    }
+ } 
